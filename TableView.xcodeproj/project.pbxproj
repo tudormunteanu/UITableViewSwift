@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AA6D12EE1AC304A2007A2019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D12ED1AC304A2007A2019 /* AppDelegate.swift */; };
 		AA6D12F01AC304A2007A2019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D12EF1AC304A2007A2019 /* ViewController.swift */; };
-		AA6D12F31AC304A2007A2019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA6D12F11AC304A2007A2019 /* Main.storyboard */; };
 		AA6D12F51AC304A2007A2019 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6D12F41AC304A2007A2019 /* Images.xcassets */; };
 		AA6D12F81AC304A2007A2019 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6D12F61AC304A2007A2019 /* LaunchScreen.xib */; };
 		AA6D13041AC304A2007A2019 /* TableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D13031AC304A2007A2019 /* TableViewTests.swift */; };
@@ -30,7 +29,6 @@
 		AA6D12EC1AC304A2007A2019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA6D12ED1AC304A2007A2019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA6D12EF1AC304A2007A2019 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA6D12F21AC304A2007A2019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA6D12F41AC304A2007A2019 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA6D12F71AC304A2007A2019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AA6D12FD1AC304A2007A2019 /* TableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +77,6 @@
 			children = (
 				AA6D12ED1AC304A2007A2019 /* AppDelegate.swift */,
 				AA6D12EF1AC304A2007A2019 /* ViewController.swift */,
-				AA6D12F11AC304A2007A2019 /* Main.storyboard */,
 				AA6D12F41AC304A2007A2019 /* Images.xcassets */,
 				AA6D12F61AC304A2007A2019 /* LaunchScreen.xib */,
 				AA6D12EB1AC304A2007A2019 /* Supporting Files */,
@@ -192,7 +189,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA6D12F31AC304A2007A2019 /* Main.storyboard in Resources */,
 				AA6D12F81AC304A2007A2019 /* LaunchScreen.xib in Resources */,
 				AA6D12F51AC304A2007A2019 /* Images.xcassets in Resources */,
 			);
@@ -236,14 +232,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AA6D12F11AC304A2007A2019 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA6D12F21AC304A2007A2019 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AA6D12F61AC304A2007A2019 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -336,9 +324,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tudor Munteanu (7L7959LND3)";
 				INFOPLIST_FILE = TableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6f9127da-1a18-424c-a89e-05eafeb551d3";
 			};
 			name = Debug;
 		};
@@ -347,6 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
