@@ -10,12 +10,13 @@ import UIKit
 
 let cellIdentifier = "cell"
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+public class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var tableView:UITableView!
-    let timeMachine = TimeMachine()
+    public var tableView:UITableView!
+    public let timeMachine = TimeMachine()
+    public var years = [String]()
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         tableView = UITableView(frame: self.view.frame, style: .Plain)
@@ -23,16 +24,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        
+        loadData()
     }
 
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: Private
+    
+    private func loadData() {
+        
+        for index in 0..<100 {
+            
+            let year = timeMachine.goBackInTime(index)
+            let yearString = "Year \(year)"
+            years.append(yearString)
+        }
+    }
+    
     // MARK: UITableViewDataSource
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as? UITableViewCell
         
@@ -40,14 +55,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: cellIdentifier)
         }
-        let year = timeMachine.goBackInTime(indexPath.row)
-        cell?.textLabel?.text = "Year  \(year)"
+        let year = years[indexPath.row]
+        cell?.textLabel?.text = year
         return cell!
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 100
+        return years.count
     }
     
     // MARK: UITableViewDelegate

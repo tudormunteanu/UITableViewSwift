@@ -14,6 +14,7 @@
 		AA6D13041AC304A2007A2019 /* TableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D13031AC304A2007A2019 /* TableViewTests.swift */; };
 		EC17F35F1B19AFEE00E8917D /* TimeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17F35E1B19AFEE00E8917D /* TimeMachine.swift */; };
 		EC17F3611B19B0BA00E8917D /* TimeMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17F3601B19B0BA00E8917D /* TimeMachineTests.swift */; };
+		EC17F3631B19BC0C00E8917D /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17F3621B19BC0C00E8917D /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		AA6D13031AC304A2007A2019 /* TableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTests.swift; sourceTree = "<group>"; };
 		EC17F35E1B19AFEE00E8917D /* TimeMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMachine.swift; sourceTree = "<group>"; };
 		EC17F3601B19B0BA00E8917D /* TimeMachineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMachineTests.swift; sourceTree = "<group>"; };
+		EC17F3621B19BC0C00E8917D /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				AA6D13031AC304A2007A2019 /* TableViewTests.swift */,
 				EC17F3601B19B0BA00E8917D /* TimeMachineTests.swift */,
+				EC17F3621B19BC0C00E8917D /* ViewControllerTests.swift */,
 				AA6D13011AC304A2007A2019 /* Supporting Files */,
 			);
 			path = TableViewTests;
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC17F3631B19BC0C00E8917D /* ViewControllerTests.swift in Sources */,
 				EC17F3611B19B0BA00E8917D /* TimeMachineTests.swift in Sources */,
 				AA6D13041AC304A2007A2019 /* TableViewTests.swift in Sources */,
 			);
