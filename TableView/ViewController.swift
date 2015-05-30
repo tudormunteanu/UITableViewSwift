@@ -13,6 +13,7 @@ let cellIdentifier = "cell"
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var tableView:UITableView!
+    let timeMachine = TimeMachine()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: cellIdentifier)
         }
-        cell?.textLabel?.text = "Cell " + String(indexPath.row)
+        let year = timeMachine.goBackInTime(indexPath.row)
+        cell?.textLabel?.text = "Year  \(year)"
         return cell!
     }
     

@@ -12,6 +12,8 @@
 		AA6D12F51AC304A2007A2019 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6D12F41AC304A2007A2019 /* Images.xcassets */; };
 		AA6D12F81AC304A2007A2019 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6D12F61AC304A2007A2019 /* LaunchScreen.xib */; };
 		AA6D13041AC304A2007A2019 /* TableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D13031AC304A2007A2019 /* TableViewTests.swift */; };
+		EC17F35F1B19AFEE00E8917D /* TimeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17F35E1B19AFEE00E8917D /* TimeMachine.swift */; };
+		EC17F3611B19B0BA00E8917D /* TimeMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17F3601B19B0BA00E8917D /* TimeMachineTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		AA6D12FD1AC304A2007A2019 /* TableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6D13021AC304A2007A2019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA6D13031AC304A2007A2019 /* TableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTests.swift; sourceTree = "<group>"; };
+		EC17F35E1B19AFEE00E8917D /* TimeMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMachine.swift; sourceTree = "<group>"; };
+		EC17F3601B19B0BA00E8917D /* TimeMachineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMachineTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 			children = (
 				AA6D12ED1AC304A2007A2019 /* AppDelegate.swift */,
 				AA6D12EF1AC304A2007A2019 /* ViewController.swift */,
+				EC17F35E1B19AFEE00E8917D /* TimeMachine.swift */,
 				AA6D12F41AC304A2007A2019 /* Images.xcassets */,
 				AA6D12F61AC304A2007A2019 /* LaunchScreen.xib */,
 				AA6D12EB1AC304A2007A2019 /* Supporting Files */,
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				AA6D13031AC304A2007A2019 /* TableViewTests.swift */,
+				EC17F3601B19B0BA00E8917D /* TimeMachineTests.swift */,
 				AA6D13011AC304A2007A2019 /* Supporting Files */,
 			);
 			path = TableViewTests;
@@ -208,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC17F35F1B19AFEE00E8917D /* TimeMachine.swift in Sources */,
 				AA6D12F01AC304A2007A2019 /* ViewController.swift in Sources */,
 				AA6D12EE1AC304A2007A2019 /* AppDelegate.swift in Sources */,
 			);
@@ -217,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC17F3611B19B0BA00E8917D /* TimeMachineTests.swift in Sources */,
 				AA6D13041AC304A2007A2019 /* TableViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +405,7 @@
 				AA6D13091AC304A2007A2019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA6D130A1AC304A2007A2019 /* Build configuration list for PBXNativeTarget "TableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +414,7 @@
 				AA6D130C1AC304A2007A2019 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
